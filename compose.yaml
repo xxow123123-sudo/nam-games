@@ -1,0 +1,9 @@
+services:
+  nam:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - nam-data:/app/data
+volumes:
+  nam-data:
